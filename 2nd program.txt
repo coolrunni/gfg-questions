@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int array[7] = {1,2,3,4,5,6};                             //Declaring array of size 7
+    int index, number;
+    cout<<"Enter the new numbers: ";
+    cin>>number;                                            //User is providing input for new number to be inserted
+    cout<<"Enter the index for new numbers: ";
+    cin>>index;                                             //User is providing input for index for new number
+
+    cout<<"Array before adding new number: ";            
+    for(int i = 0; i < 6; i++){                             //Printing the whole array
+        cout<<array[i]<<" ";
+    }
+
+    for(int i = 5; i >= index; i--){                        //Shifting elements index by 1 to right
+        array[i+1] = array[i];
+    }
+    array[index] = number;                                   //Adding the new number to the specified index
+
+    cout<<endl<<"Array after adding new number: ";          //Printing array after adding new number
+    for(int i = 0; i < 7; i++){
+        cout<<array[i]<<" ";
+    }
+    return 0;
+}

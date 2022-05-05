@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    char str[] = "A string";    //inserting the value in a array of characters
+    char *ptr = str;
+    cout<<str[0]<<" "<<*ptr<<" "<<*(ptr+3)<<endl;       //str[0] is printing the value of the starting index,*ptr same as str[0], *(ptr+3) printing the 3rd index value
+    ptr += 2;       //pointer is getting increased by 2
+    cout<<*ptr<<" "<<*(ptr+2)<<" "<<*(ptr+5)<<endl;     //*ptr printing value of index 0, *(ptr+2) is the value index 2 and value of 5th index
+    return 0;
+}
